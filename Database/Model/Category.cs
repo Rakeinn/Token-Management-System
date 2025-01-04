@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace database.Model
 {
-    internal class Category
+    public class Category
     {
         public int CategoryId { get; set; }
         public string? CategoryName { get; set; }

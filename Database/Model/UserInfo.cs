@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace database.Model
 {
    
-        public class User: BaseModel
+        public class UserInfo: BaseModel
         {
             [Key]
             public string UserId { get; set; } = Guid.NewGuid().ToString();
@@ -21,7 +21,7 @@ namespace database.Model
             [Required]
             public string? PasswordHash { get; set; }
 
-            public string? RoleId { get; set; }
+            public int? RoleId { get; set; } 
             
             
           

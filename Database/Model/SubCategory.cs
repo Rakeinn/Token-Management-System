@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace database.Model
 {
-    internal class SubCategory
+    public class SubCategory
     {
         public int SubCategoryId { get; set; }
         public string? SubCategoryName { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace database.Model
 {
-    public class Token
+    public class Token:BaseModel
     {
         [Key]
         public string TokenId { get; set; } = Guid.NewGuid().ToString();
@@ -21,13 +21,13 @@ namespace database.Model
         public string? CategoryId { get; set; }
         [Required]
         public string? SubCategoryId { get; set; }
-        [Required]
+       
         public string? Description { get; set; }
-
+        [Required]
         public string? RoleId { get; set; }
 
         public string? CommentId { get; set; }
-
+        [Required]
         public string? StatusId { get; set; }
         //File
 
